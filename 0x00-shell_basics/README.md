@@ -1,1 +1,1 @@
-Listing hidden files in long format
+Liting file digits
