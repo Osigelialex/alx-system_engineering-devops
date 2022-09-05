@@ -1,1 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
+=======
+cp -nu *.html ..
+>>>>>>> ebb2b9fbda768b13d71b41683f5ee428ef7e2a76
