@@ -10,3 +10,4 @@ do
             break;
     fi
 done
+#prints betty school ten times
