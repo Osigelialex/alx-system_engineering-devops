@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#This script prints betty 10 times
 i=0
 for (( ; ; ))
 do
@@ -10,4 +10,3 @@ do
             break;
     fi
 done
-#prints betty school ten times
