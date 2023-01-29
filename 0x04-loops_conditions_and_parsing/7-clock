@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#program to print the time
+
+hour=0
+minute=1
+
+while [[ $hour -lt 13 ]]
+do
+    if [[ $minute -eq 60 ]]
+    then
+        minute=1
+        (( hour++ ))
+        if [[ $hour -lt 13 ]]
+        then
+            echo "hour $hour"
+        fi
+    else
+        echo $minute
+        (( minute++ ))
+    fi
+done
