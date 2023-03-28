@@ -3,8 +3,9 @@
 
 class my_ssh_config {
 	ssh_config { '144983-web-01':
-	ensure => 'present',
+	ensure => present,
 	host => '18.207.142.20',
+	user => 'ubuntu',
 	IdentityFile => '~/.ssh/school'
 	}	
 }
