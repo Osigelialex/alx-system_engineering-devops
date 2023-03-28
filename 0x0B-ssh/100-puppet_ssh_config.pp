@@ -1,11 +1,16 @@
-#!/usr/bin/env bash
-# client configuration file with puppet
+# Seting up my client config file
+include stdlib
 
-class my_ssh_config {
-	ssh_config { '144983-web-01':
-	ensure => present,
-	host => '18.207.142.20',
-	user => 'ubuntu',
-	IdentityFile => '~/.ssh/school'
-	}	
+file_line { 'Turn off passwd auth':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => '    PasswordAuthentication no',
+  replace => true,
+}
+
+file_line { 'Delare identity file':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => '     IdentityFile ~/.ssh/school',
+  replace => true,
 }
